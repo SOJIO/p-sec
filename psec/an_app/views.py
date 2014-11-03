@@ -21,7 +21,7 @@ def index(request):
   h="<html><body>%s.</body></html>" % nowh
   m="<html><body>%s.</body></html>" % now.minute
   s="<html><body>%s.</body></html>" % now.second
-  return HttpResponse("<h1 align=center> "+timee+" "+`now.year`+"/"+`now.month`+"/"+`now.day`+"  "+`nowh`+":"+`now.minute`+":"+`now.second`+" in Ukraine</h1>")
+  return HttpResponse("<h1 align=center> "+timee+" "+`now.year`+"|"+`now.month`+"|"+`now.day`+"  "+`nowh`+":"+`now.minute`+":"+`now.second`+" in Ukraine</h1>")
 
 def cur_date(request):
   nw=datetime.datetime.now()
